@@ -33,6 +33,10 @@ func printSlice(s []int) {
 	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
 }
 
+func modify(aa []int) {
+	aa[0] = 69
+}
+
 func check() {
 	//once you increase the lower pointer you lose
 	//capacity....otherwise right pointers capacity can be regained
@@ -45,6 +49,11 @@ func check() {
 	s3 := s2[2:]
 
 	printSlice(s3)
+
+	aa := make([]int, 8)
+	modify(aa)
+	//referencew thing is happeninng
+	fmt.Print("aa  ", aa)
 
 }
 
