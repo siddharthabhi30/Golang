@@ -85,6 +85,10 @@ func two(job chan int) {
 //compiler wait if some thread maay send something to this channel......if one thread is in sleep and
 //there is a possibility that it may send some data ..then compiler waits before sending deadlock
 //above thing is may a bug
+//wait group in chan7......it is like delaying the main method ....for all
+//rountined to finish
+//if function from a thread is calling two threads....and if func ends ..thread ends....
+//the parent func exibits main thread behaviour
 func three() {
 	chh := make(chan int)
 
