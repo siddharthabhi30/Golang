@@ -19,10 +19,11 @@ func main() {
 
 	s[0] = 69
 
-	//referecing like python is happening here
+	//referencing like python is happening here
 	fmt.Println(s, primes)
 
-	//	his creates the same array as above, then builds a slice that references it:
+	//	this creates the same array as above,
+	//	then builds a slice that references it:
 
 	//cc:= []bool{true, true, false}
 

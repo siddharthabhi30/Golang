@@ -33,6 +33,10 @@ func printSlice(s []int) {
 	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
 }
 
+func printSlice2d(s [][]int) {
+	fmt.Printf("2D len=%d cap=%d %v\n", len(s), cap(s), s)
+}
+
 func modify(aa []int) {
 	aa[0] = 69
 }
@@ -52,7 +56,7 @@ func check() {
 
 	aa := make([]int, 8)
 	modify(aa)
-	//referencew thing is happeninng
+	//reference thing is happeninng
 	fmt.Print("aa  ", aa)
 
 }
@@ -83,6 +87,6 @@ func slicesOfSlice() {
 	var pic [][]int
 	var my []int
 	pic = append(pic, my)
-	printSlice(pic)
+	printSlice2d(pic)
 
 }

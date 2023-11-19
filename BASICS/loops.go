@@ -7,6 +7,8 @@ import (
 
 func pow(x, n, lim float64) float64 {
 	//score of v is in IF only and we are also excuting something
+	// variable v here has limited scope. till else block only
+
 	if v := math.Pow(x, n); v < lim {
 		return v
 	} else if v == lim {

@@ -18,9 +18,9 @@ var (
 const (
 	// Create a huge number by shifting a 1 bit left 100 places.
 	// In other words, the binary number that is 1 followed by 100 zeroes.
-	Big = 1 << 100
+	Big1 = 1 << 100
 	// Shift it right again 99 places, so we end up with 1<<1, or 2.
-	Small = Big >> 99
+	Small1 = Big1 >> 99
 )
 
 var c, python, java bool
@@ -31,7 +31,7 @@ func main() {
 	// this is wrong--> u = add(1, 2)
 	fmt.Println(i, c, python, java, i)
 
-	var my = "sid"
+	my := "sid"
 	fmt.Print(my, MaxInt)
 	fmt.Println()
 
@@ -51,5 +51,5 @@ func main() {
 	const truth = true
 	fmt.Printf("truth is of type %T\n  val is %v", truth, truth)
 
-	fmt.Println(Big)
+	//fmt.Printf("Type: %T Value: %v\n", Big1, Big1)
 }

@@ -13,6 +13,8 @@ func WordCount(s string) map[string]int {
 	for i := 0; i < len(arr); i++ {
 		//extracting two values ...oen cant be undescore if it not used
 		_, ok := res[arr[i]]
+		// we don't really need this since if map doesn't contain the key
+		// then nil val of key is chosen which is zero for int.
 		if ok == false {
 			res[arr[i]] = 0
 		}

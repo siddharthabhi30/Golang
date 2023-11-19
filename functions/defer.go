@@ -2,8 +2,13 @@ package main
 
 import "fmt"
 
-func taek() {
-	fmt.Println("another fuynction")
+func task() {
+	fmt.Println("deferred function")
+}
+
+func upper() int {
+	defer task()
+	return 33
 }
 
 // A defer statement defers the execution of a function until the surrounding function returns.
@@ -14,16 +19,6 @@ func taek() {
 // defer works like a stack in which Latest pushed function is executed.
 
 func main() {
-	defer fmt.Println("world")
-	taek()
-	fmt.Println("hello")
-
-	fmt.Println("counting")
-
-	for i := 0; i < 10; i++ {
-		defer fmt.Println(i)
-	}
-
-	fmt.Println("done")
-
+	res := upper()
+	println(res)
 }
