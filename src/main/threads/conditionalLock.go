@@ -42,4 +42,5 @@ func main() {
 	} else {
 		fmt.Printf("actual val of count %v\n", count)
 	}
+	mu.Unlock()
 }

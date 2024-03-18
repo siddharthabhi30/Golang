@@ -8,6 +8,8 @@ func task() {
 
 func upper() int {
 	defer task()
+	defer println("one")
+	defer println("two")
 	return 33
 }
 
