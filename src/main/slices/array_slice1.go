@@ -11,6 +11,8 @@ this exp shows that the
 lower index cannot go left but right index can change
 
 although, don't use this technique.
+
+Garbage collection doesn't happen for blank slice array.
 */
 func main() {
 	s := []int{2, 3, 5, 7, 11, 13}
@@ -40,7 +42,7 @@ func testNil() {
 	var a []int
 
 	if a == nil {
-		println("i am nil")
+		println("i am nil slice")
 	}
 }
 

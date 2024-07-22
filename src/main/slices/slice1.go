@@ -11,7 +11,7 @@ Slices are references not actual copy.
 */
 func main() {
 
-	makingSlice()
+	testingSliceAppend()
 
 }
 
